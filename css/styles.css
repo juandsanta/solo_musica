@@ -91,7 +91,7 @@ nav .logo{
 }
 
 #definicion .der{
-    margin-left: 5em;
+    margin-left: 2em;
 }
 
 #definicion, #tipos, #instrumentos{
@@ -173,7 +173,27 @@ footer .col-ultima{
     margin: 0 auto;
 }
 
+@media screen and (min-width:600px) and (max-width:900px) {
+    #definicion .col{
+        width: 90%;
+        margin: 0;
+    }
 
+    footer .fila{
+        width: 98%;
+    }
+
+    footer .col{
+        width: 100%;
+        text-align: center;
+        padding: 0.2em;
+    }
+
+    footer .col-iz{
+        border-right: none;
+    }
+
+}
 @media screen and (max-width:600px) {
     .menu-items {
         flex-direction: column; 
@@ -192,7 +212,26 @@ footer .col-ultima{
         width: 100%;
     }
 
+    #definicion .col{
+        width: 90%;
+        margin: 0;
+    }
+
     .img_inst{
         width: 100%;
+    }
+
+    footer .fila{
+        width: 98%;
+    }
+
+    footer .col{
+        width: 100%;
+        text-align: center;
+        padding: 0.2em;
+    }
+
+    footer .col-iz{
+        border-right: none;
     }
 }
