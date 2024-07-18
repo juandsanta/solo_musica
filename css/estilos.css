@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    margin-bottom: 1.2em;
+}
+
+p{
+    margin-bottom: 1em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.fila{
+    width: 90%;
+    margin: 0em auto;
+}
+
+nav .enlace{
+    float: right;
+    padding: 0.5em;
+}
+
+nav .logo{
+    height: 70px;
+    width: 70px;
+}
+
+.menu {
+    background-color: black;
+    overflow: hidden;
+}
+
+.menu a {
+    color: white;
+    text-align: left;
+    padding: 1em;
+    text-decoration: none; 
+    display: block;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+
+.menu-icon {
+    display: none; 
+    font-size: 1.5em; 
+    padding: 0.5em 1em; 
+    cursor: pointer; 
+    color: white;
+}
+
+.menu-items {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    flex-direction: row;
+}
+
+.menu-items li {
+    flex: 1; 
+}
+
+#menu-toggle {
+    display: none; 
+}
+
+
+header{
+    background-image: url(../img/instrumentos1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40em;
+}
+
+header .fila{
+    padding-top: 20em;
+}
+
+header h1{
+    font-size: 4em;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+
+#definicion{
+    background-color: rgba(0, 0, 0, 0.845);
+    color: white;
+}
+
+#historia{
+    background-color: rgba(0, 0, 0, 0.81);
+    color: white;
+}
+
+#definicion, #historia, #tipos{
+    padding: 3em 0;
+}
+
+#historia .col-izq, .col-der{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#historia .col-izq{
+    text-align: left;
+    margin-right: 4em;
+}
+
+#tipos .fila{
+    text-align: center;
+}
+
+#tipos .col{
+    width: 17%;
+    padding: 1.5em;
+    display: inline-block;
+}
+
+.viento, .cuerda, .percusion, .electrófonos{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+}
+
+footer .col{
+    width: 48%;
+    display: inline-block;
+}
+
+footer .col-iz{
+    text-align: center;
+    border-right: 1px solid white;
+    width: 25%;
+}
+
+footer .col-de{
+    width: 65%;
+}
+
+footer .col-iz, footer .col-de{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+footer ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-left: 0.4em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .col-ultima{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flecha{
+    box-shadow: 0px 0px 5px 5px black;
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    background: rgb(189, 189, 189);
+    font-size: 1.7em;
+    border-radius: 50%;
+    padding: 0.35em;
+}
+
+.flecha a{
+    color: black;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .fila{
+        width: 90%;
+    }
+
+    #historia .col{
+        width: 100%;
+    }
+
+    #tipos .col{
+        width: 40%;
+    }
+
+    footer .fila{
+        width: 98%;
+    }
+
+    footer .col{
+        width: 100%;
+        text-align: center;
+        padding: 0.2em;
+    }
+
+    footer .col-iz{
+        border-right: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 1.1em;
+    }
+
+    .fila{
+        width: 95%;
+    }
+
+    .menu-items {
+        flex-direction: column; 
+        display: none; 
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu-items {
+        display: flex;
+    }
+
+    #historia .col{
+        width: 100%;
+    }
+
+    #tipos .col{
+        width: 80%;
+    }
+
+     footer .fila{
+        width: 98%;
+    }
+
+    footer .col{
+        width: 100%;
+        text-align: center;
+        padding: 0.2em;
+    }
+
+    footer .col-iz{
+        border-right: none;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario{
+    display: block; /*alineacion vertical*/
+    border: 3px aqua solid;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+#contactos .col1{
+    width: 100%;
+}
+
+#contactos .col2{
+    width: 45%;
+    display: inline-block;
+}
+
+#contactos .mapa{
+    width: 30%;
+    display: inline-block;
+}
