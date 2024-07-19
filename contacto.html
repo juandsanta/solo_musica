@@ -3,37 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/tienda.css">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/contacto.css">
 
 </head>
 <body>
+
+    <nav class="menu">
+        <div class="fila">
+            <div class="col">
+                <a class="enlace" href="index.html"><img class="logo" src="img/logo3.png" alt="logo"></a>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-items">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="viento.html">Viento</a></li>
+            <li><a href="cuerda.html">Cuerda</a></li>
+            <li><a href="percusion.html">Percusión</a></li>
+            <li><a href="electrofonos.html">Electrófonos</a></li>
+            <li><a href="academia.html">Academia</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="fila1">
+        <div class="col">
+            <h2>Estas a un paso...</h2>
+            <p>Rellene el siguiente formulario para mandar información a su correo en donde indicaremos los pasos para realizar la inscripción</p>
+        </div>
+    </div>
+
     <section id="contactos">
+        <div class="fila">
+            <div class="col">
+                <form action="#">
+                    <input class="formulario" type="text" id="nombre" placeholder="Nombre completo">
+                    <input class="formulario" type="email" id="correo" placeholder="Correo electrónico">
+                    <textarea class="formulario" id="mensaje" placeholder="Por qué desea inscribirse"></textarea>
 
-    </section>
-    <div class="fila">
-        <div class="col1">
-            <h2>Escríbrenos</h2>
-            <form action="#">
-                <!-- <label for="nombre">Nombre completo</label> -->
-                <input class="formulario" type="text" id="nombre" placeholder="Nombre completo">
-                <!-- <label for="correo">Correo electrónico</label> -->
-                <input class="formulario" type="email" id="correo" placeholder="Correo electrónico">
-                <!-- <label for="asunto">Asunto</label> -->
-                <input class="formulario" type="text" id="asunto" placeholder="Asunto">
-
-                <textarea class="formulario" id="mensaje" placeholder="Mensaje"></textarea>
-
-                <input class="formulario boton" type="submit" value="Enviar">
-            </form>
+                    <input class="formulario boton" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
-    <div class="fila">
-        <div class="col2 mapa">
-            <h2>Encuetranos</h2>
-            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7401407023594!2d-75.70558800321042!3d4.814620999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38874fc0624b6d%3A0xa3d1d6d648c39aca!2sSENA%20Comercio%20Y%20Servicios%20Cra%208!5e0!3m2!1ses!2sco!4v1721302679505!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-        </div>
-        <div class="col2">
-            <h3>Dirección</h3>
+        <div class="fila">
+            <div class="col2 mapa">
+                <h2>Encuentranos en nuestra tienda fisica </h2>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7401407023594!2d-75.70558800321042!3d4.814620999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38874fc0624b6d%3A0xa3d1d6d648c39aca!2sSENA%20Comercio%20Y%20Servicios%20Cra%208!5e0!3m2!1ses!2sco!4v1721302679505!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <div class="col2">
+                <h3>Dirección</h3>
                 <p>Cra. 8 #26-79, Pereira, Risaralda</p>
                 <h3>Números telefónicos</h3>
                 <p>3137184983</p>
@@ -41,10 +61,37 @@
                 <p>(6)3154578</p>
                 <h3>Correo electrónico</h3>
                 <p>juan.santa92@itesarc.edu.co</p>
+            </div>
         </div>
-    </div>
-        
+    </section>
 
-    </div>
+    <footer>
+        <div class="fila">
+            <div class="col col1">
+                <div class="col-iz">
+                    <p><i class="fa-solid fa-envelope"></i></p>
+                    <p>Contacto</p>
+                </div>
+                <div class="col-de">
+                    <p><i class="fa-solid fa-phone"></i> 3117480098</p>
+                    <p><i class="fa-solid fa-at "></i> dsguerreo1151@gmail.com</p>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="col-iz">
+                    <p><i class="fa-solid fa-heart"></i></i></p>
+                    <p>Siguenos</p>
+                </div>
+                <div class="col-de col-de2">
+                    <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -4,32 +4,34 @@
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: whitesmoke;
-}
-
-h2{
-    margin-bottom: 1.2em;
-}
-
-p{
-    margin-bottom: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img{
     max-width: 100%;
 }
 
-
-.fila1{
+.fila{
     width: 80%;
     margin: 0 auto;
-    margin-top: 2em;
 }
 
-.fila{
-    width: 90%;
-    margin: 0 auto
+h1{
+    font-size: 2em;
+    margin: 1em 0em;
+    color: rgb(227, 227, 0);
+}
+
+h2{
+    margin-bottom: 1.2em;
+}
+
+h3{
+    margin: 1em 0em;
+}
+
+p{
+    margin-bottom: 1em;
 }
 
 nav .enlace{
@@ -86,32 +88,56 @@ nav .logo{
     display: none; 
 }
 
-iframe{
-    max-width: 100%;
+#presentacion{
+    background-color: rgba(0, 0, 0, 0.845);
+    color: white;
+    padding: 2em;
 }
 
-.formulario{
-    display: block; /*alineacion vertical*/
-    border: 3px aqua solid;
-    margin: 1em;
-    padding: 0.5em;
-    border-radius: 15px;
-}
-
-#contactos .fila{
-    width: 80%;
+.fila{
+    width: 90%;
     margin: 0 auto;
-    padding: 1em;
 }
 
-#contactos .col2{
+.card{
+    width: 25%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 2em;
+    border-radius: 8px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.card img{
     width: 100%;
 }
 
-#contactos h3{
-    margin-top: 1em;
+.card-content{
+    text-align: center;
+    padding: 0.5em;
 }
 
+.card-content h3{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card-content a{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em;
+    background: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
 
 footer{
     background-color: black;
@@ -158,14 +184,12 @@ footer .col-ultima{
     margin: 0 auto;
 }
 
-@media screen and (min-width:600px) and (max-width:900px) {
-    .fila{
-        width: 90%;
+@media screen and (min-width:600px) and (max-width:900px){
+    .card{
+        width: 36%;
     }
+    
 
-    nav .logo{
-        display: none;
-    }
     footer .fila{
         width: 98%;
     }
@@ -182,12 +206,13 @@ footer .col-ultima{
 }
 
 @media screen and (max-width:600px) {
-    body{
-        font-size: 1.1em;
-    }
 
     .fila{
         width: 95%;
+    }
+
+    .card{
+        width: 70%;
     }
 
     .menu-items {
@@ -202,7 +227,15 @@ footer .col-ultima{
     #menu-toggle:checked + .menu-icon + .menu-items {
         display: flex;
     }
-    
+
+    #historia .col{
+        width: 100%;
+    }
+
+    #tipos .col{
+        width: 80%;
+    }
+
     footer .fila{
         width: 98%;
     }

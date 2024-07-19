@@ -37,14 +37,15 @@ p{
     margin-bottom: 1em;
 }
 
+
 nav .enlace{
     float: right;
     padding: 0.5em;
 }
 
 nav .logo{
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 100px;
 }
 
 .menu {
@@ -62,7 +63,9 @@ nav .logo{
 
 .menu a:hover {
     color: yellow;
+    font-size: 1.1em;
 }
+
 
 .menu-icon {
     display: none; 
@@ -74,10 +77,15 @@ nav .logo{
 
 .menu-items {
     list-style-type: none; 
-    margin: 0; 
+    margin-left: 2em; 
+    margin-top: 1em;
     padding: 0;
     display: flex; 
     flex-direction: row;
+}
+
+.menu-items li {
+    flex: 1; 
 }
 
 #menu-toggle {
@@ -117,15 +125,16 @@ nav .logo{
     padding: 0.5em 1em;
 }
 
-
 #instrumentos .fila_principal{
     border-top: 1px solid black;
     width: 80%;
     margin: 0em auto;
+    padding: 1em;
 }
 
 .img_inst{
     width: 80%;
+    padding: 1em;
 }
 
 footer{
@@ -174,6 +183,10 @@ footer .col-ultima{
 }
 
 @media screen and (min-width:600px) and (max-width:900px) {
+    nav .logo{
+        display: none;
+    }
+
     #definicion .col{
         width: 90%;
         margin: 0;

@@ -30,8 +30,8 @@ nav .enlace{
 }
 
 nav .logo{
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 100px;
 }
 
 .menu {
@@ -49,6 +49,7 @@ nav .logo{
 
 .menu a:hover {
     color: yellow;
+    font-size: 1.1em;
 }
 
 
@@ -62,7 +63,8 @@ nav .logo{
 
 .menu-items {
     list-style-type: none; 
-    margin: 0; 
+    margin-left: 2em; 
+    margin-top: 1em;
     padding: 0;
     display: flex; 
     flex-direction: row;
@@ -96,7 +98,7 @@ header h1{
 }
 
 
-#definicion{
+#definicion, #importante{
     background-color: rgba(0, 0, 0, 0.845);
     color: white;
 }
@@ -106,7 +108,7 @@ header h1{
     color: white;
 }
 
-#definicion, #historia, #tipos{
+#definicion, #historia, #importante, #tipos{
     padding: 3em 0;
 }
 
@@ -116,6 +118,20 @@ header h1{
     vertical-align: top;
 }
 
+.negrita{
+    font-weight: bold;
+}
+#importante .col2{
+    padding: 1em;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#importante .col3{
+    padding: 1em;
+    width: 70%;
+}
 
 #historia .col-izq{
     text-align: left;
@@ -182,26 +198,13 @@ footer .col-ultima{
     margin: 0 auto;
 }
 
-.flecha{
-    box-shadow: 0px 0px 5px 5px black;
-    height: 25px;
-    width: 25px;
-    position: fixed;
-    bottom: 30px;
-    right: 35px;
-    background: rgb(189, 189, 189);
-    font-size: 1.7em;
-    border-radius: 50%;
-    padding: 0.35em;
-}
-
-.flecha a{
-    color: black;
-}
-
 @media screen and (min-width:600px) and (max-width:900px) {
     .fila{
         width: 90%;
+    }
+
+    nav .logo{
+        display: none;
     }
 
     #historia .col{
